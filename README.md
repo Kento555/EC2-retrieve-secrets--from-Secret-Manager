@@ -28,10 +28,9 @@ IAM Policy JSON Example:
 ```
 
 Explanation:   
-```
 Effect: "Allow" – This allows the action.
 Action: "secretsmanager:GetSecretValue" – This grants the ability to retrieve a secret value from Secrets Manager.
-```
+
    
 Resource: The ARN for the specific secret you want the EC2 instance to access.
 In this case, for the secret named prod/cart-service/credentials, the ARN will be arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentials-*.
@@ -44,7 +43,8 @@ The * is a wildcard that matches all versions of the secret (Secrets Manager ver
 
 ```
 arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentials-*```
-
+```
+   
 - **arn**: The standard identifier prefix.
 - **aws**: The AWS partition.
 - **secretsmanager**: The service name.
@@ -53,9 +53,8 @@ arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentia
 - **secret**: The resource type.
 - **prod/cart-service/credentials**: The **secret name**.
 - `*` is a wildcard representing any version of the secret.
-```
 
-   
+
 4️⃣ How to Attach IAM Policy to EC2 Role**
 
 1. Create an IAM **role** that the EC2 instance will assume.
