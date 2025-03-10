@@ -14,7 +14,7 @@ Here's the IAM policy that grants EC2 permissions to retrieve the secret prod/ca
 
 
 IAM Policy JSON Example:
-
+```bash
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -25,6 +25,7 @@ IAM Policy JSON Example:
         }
     ]
 }
+```
 
 Explanation:
 Effect: "Allow" – This allows the action.
