@@ -57,7 +57,7 @@ arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentia
 ```
 ---
 
-### **4️⃣ How to Attach IAM Policy to EC2 Role**
+4️⃣ How to Attach IAM Policy to EC2 Role**
 
 1. Create an IAM **role** that the EC2 instance will assume.
 2. Attach the IAM policy (above) to the EC2 role.
@@ -69,5 +69,7 @@ After attaching the IAM role to the EC2 instance, you can use the AWS SDK or CLI
 
 ```bash
 aws secretsmanager get-secret-value --secret-id prod/cart-service/credentials
+```
+### **
 
 
