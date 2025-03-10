@@ -59,11 +59,11 @@ arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentia
 
 1. Create an IAM **role** that the EC2 instance will assume.
 2. Attach the IAM policy (above) to the EC2 role.
-3. When launching your EC2 instance, assign the IAM role to the instance.
+3. When launching EC2 instance, assign the IAM role to the instance.
    
 ### **Testing Access**
    
-After attaching the IAM role to the EC2 instance, you can use the AWS SDK or CLI on the EC2 instance to verify that the secret can be retrieved:
+After attaching the IAM role to the EC2 instance, can use the AWS SDK or CLI on the EC2 instance to verify that the secret can be retrieved:
    
 ```bash
 aws secretsmanager get-secret-value --secret-id prod/cart-service/credentials
